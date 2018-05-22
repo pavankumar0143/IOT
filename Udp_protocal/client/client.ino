@@ -1,22 +1,20 @@
 #include<WiFi.h>
 #include<SPI.h>
 
-char ssid[]="Ftp";
-char pass[]="pavan123456789";
+char ssid[]="Lenovo";
+char pass[]="123456789";
 
-IPAddress ip(192,168,1,122);
+IPAddress ip(192,168,43,123);
 
-unsigned char data = 0;
+char data[15];
 
-WiFiServer server(8888);
+unsigned int LP = 5555;
 
-boolean alreadyConnected = false;
+WiFiUDP Udp;
 
 void setup() {
 
   Serial.begin(9600);
-
-  pinMode(31, INPUT_PULLUP);
   
   WiFi.config(ip);
 
@@ -43,26 +41,28 @@ void setup() {
 
   printWifiStatus();
 
-  server.begin();
+  Udp.begin(LP);
   
 
 }
 
 void loop() {
 
-  WiFiClient client = server.available();
+  int packetsize = Udp.parsePacket()
   
   
-  if (client == true){
-    if (client.available()){
-      char client_msg = client.read();
-      Serial.println(client_msg);
+  if (Serial.available()){
+    Serial.readBytes(Data, 15);
+    Udp.beginPacket(ip, 2500);
+    Udp.write()
+    Udp.endPacket()
+
+    for (i = 0; i < 10; i++){
+      data[i] =' ';
     }
-    else{
-      server.print ("Hello\n");
-      delay(600);
-    }
+    
   }
+  delay(100);
 }
 
 void printWifiStatus(){
