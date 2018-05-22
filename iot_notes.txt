@@ -1,0 +1,228 @@
+http
+tcp 
+udp
+ifttt
+
+Board Used - "Tiva tm4c123g"
+
+
+Protocals:
+
+SPI-serial pheriha
+i2c - 
+Uart
+
+cortex m4 Arch
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Energia: 1.6.10E18 (Linux), Board: "LaunchPad (Tiva C) w/ tm4c129 (120MHz)"
+
+Build options changed, rebuilding all
+
+Sketch uses 3,012 bytes (0%) of program storage space. Maximum is 1,048,576 bytes.
+Global variables use 616 bytes (0%) of dynamic memory, leaving 261,528 bytes for local variables. Maximum is 262,144 bytes.
+DSLite version 7.2.0.2096
+Configuring Debugger (may take a few minutes on first launch)...
+	Parsing connections/Stellaris_ICDI_Connection.xml
+	Parsing drivers/stellaris_cs_dap.xml
+	Parsing drivers/stellaris_cortex_m4.xml
+	Parsing devices/tm4c1294ncpdt.xml
+	Parsing routers/cs_dap.xml
+	Parsing ../Modules/cs_dap_NotVisible.xml
+	Parsing cpus/cortex_m4.xml
+	Parsing ../Modules/cortexM4_NotVisible.xml
+	Parsing ../Modules/Tiva_TM4C/sc4cc231e6pm/watchdog.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/ssi.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/uart.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/i2c.xml
+	Parsing ../Modules/Tiva_TM4C/sc4c1290kcpdt/pwm.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce93xh6pm/qei.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/timer.xml
+	Parsing ../Modules/Tiva_TM4C/sc4c1290kcpdt/adc.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/comp.xml
+	Parsing ../Modules/Tiva_TM4C/sc4cc231e6pm/can.xml
+	Parsing ../Modules/Tiva_TM4C/sc4c1290kcpdt/usb.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/gpio.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/eeprom.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/i2c.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/epi.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/timer.xml
+	Parsing ../Modules/Tiva_TM4C/sc4c1294ncpdt/emac.xml
+	Parsing ../Modules/Tiva_TM4C/sc4cc231e6pm/sysexc.xml
+	Parsing ../Modules/Tiva_TM4C/sc4c1290kcpdt/hib.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/flash.xml
+	Parsing ../Modules/Tiva_TM4C/tm4c1294kcpdt/sysctl.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/udma.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/ccm.xml
+	Parsing ../Modules/Tiva_TM4C/sc4ce290ncpz/nvic.xml
+	Parsing ../drivers/cortexM4_fpu.xml
+	Initializing Register Database...
+	Parsing /home/pavan/.ti/tools/0/0/8295142949950750523.cache
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4ce290ncpz/ssi.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4ce290ncpz/uart.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4ce290ncpz/i2c.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4c1290kcpdt/pwm.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4ce290ncpz/timer.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4c1290kcpdt/adc.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4ce290ncpz/comp.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4c1290kcpdt/usb.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4ce290ncpz/gpio.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4ce290ncpz/eeprom.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4ce290ncpz/epi.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4c1294ncpdt/emac.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4c1290kcpdt/hib.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4ce290ncpz/flash.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/tm4c1294kcpdt/sysctl.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4ce290ncpz/udma.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4ce290ncpz/ccm.xml
+	Parsing /home/pavan/.energia15/packages/energia/tools/dslite/7.2.0.2096/common/targetdb/Modules/Tiva_TM4C/sc4ce290ncpz/nvic.xml
+	Initializing: CORTEX_M4_0
+	Mapping registers: CORTEX_M4_0 - Core Registers
+	Mapping registers: CORTEX_M4_0 - WATCHDOG0
+	Mapping registers: CORTEX_M4_0 - WATCHDOG1
+	Mapping registers: CORTEX_M4_0 - SSI0
+	Mapping registers: CORTEX_M4_0 - SSI1
+	Mapping registers: CORTEX_M4_0 - SSI2
+	Mapping registers: CORTEX_M4_0 - SSI3
+	Mapping registers: CORTEX_M4_0 - UART0
+	Mapping registers: CORTEX_M4_0 - UART1
+	Mapping registers: CORTEX_M4_0 - UART2
+	Mapping registers: CORTEX_M4_0 - UART3
+	Mapping registers: CORTEX_M4_0 - UART4
+	Mapping registers: CORTEX_M4_0 - UART5
+	Mapping registers: CORTEX_M4_0 - UART6
+	Mapping registers: CORTEX_M4_0 - UART7
+	Mapping registers: CORTEX_M4_0 - I2C0
+	Mapping registers: CORTEX_M4_0 - I2C1
+	Mapping registers: CORTEX_M4_0 - I2C2
+	Mapping registers: CORTEX_M4_0 - I2C3
+	Mapping registers: CORTEX_M4_0 - PWM0
+	Mapping registers: CORTEX_M4_0 - QEI0
+	Mapping registers: CORTEX_M4_0 - TIMER0
+	Mapping registers: CORTEX_M4_0 - TIMER1
+	Mapping registers: CORTEX_M4_0 - TIMER2
+	Mapping registers: CORTEX_M4_0 - TIMER3
+	Mapping registers: CORTEX_M4_0 - TIMER4
+	Mapping registers: CORTEX_M4_0 - TIMER5
+	Mapping registers: CORTEX_M4_0 - ADC0
+	Mapping registers: CORTEX_M4_0 - ADC1
+	Mapping registers: CORTEX_M4_0 - COMP
+	Mapping registers: CORTEX_M4_0 - CAN0
+	Mapping registers: CORTEX_M4_0 - CAN1
+	Mapping registers: CORTEX_M4_0 - USB0
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTA_AHB
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTB_AHB
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTC_AHB
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTD_AHB
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTE_AHB
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTF_AHB
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTG_AHB
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTH_AHB
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTJ_AHB
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTK
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTL
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTM
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTN
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTP
+	Mapping registers: CORTEX_M4_0 - GPIO_PORTQ
+	Mapping registers: CORTEX_M4_0 - EEPROM
+	Mapping registers: CORTEX_M4_0 - I2C8
+	Mapping registers: CORTEX_M4_0 - I2C9
+	Mapping registers: CORTEX_M4_0 - I2C4
+	Mapping registers: CORTEX_M4_0 - I2C5
+	Mapping registers: CORTEX_M4_0 - I2C6
+	Mapping registers: CORTEX_M4_0 - I2C7
+	Mapping registers: CORTEX_M4_0 - EPI0
+	Mapping registers: CORTEX_M4_0 - TIMER6
+	Mapping registers: CORTEX_M4_0 - TIMER7
+	Mapping registers: CORTEX_M4_0 - EMAC0
+	Mapping registers: CORTEX_M4_0 - SYSEXC
+	Mapping registers: CORTEX_M4_0 - HIB
+	Mapping registers: CORTEX_M4_0 - FLASH_CTRL
+	Mapping registers: CORTEX_M4_0 - SYSCTL
+	Mapping registers: CORTEX_M4_0 - UDMA
+	Mapping registers: CORTEX_M4_0 - CCM0
+	Mapping registers: CORTEX_M4_0 - NVIC
+	Mapping registers: CORTEX_M4_0 - FPU
+	Mapping registers: CORTEX_M4_0 - Hidden
+	Building search data: CORTEX_M4_0
+	Applying virtual groups: CORTEX_M4_0 - USB0
+	Applying virtual groups: CORTEX_M4_0 - SYSCTL
+	Executing Startup Scripts: CORTEX_M4_0
+GEL: CORTEX_M4_0: GEL Output: 
+Memory Map Initialization Complete
+Connecting...
+
+i = 3, rc = -3
+Failed to open device (Reason = LIBUSB_ERROR_ACCESS).
+
+i = 3, rc = -3
+Failed to open device (Reason = LIBUSB_ERROR_ACCESS).
+
+i = 3, rc = -3
+Failed to open device (Reason = LIBUSB_ERROR_ACCESS).
+
+i = 3, rc = -3
+Failed to open device (Reason = LIBUSB_ERROR_ACCESS).
+
+i = 3, rc = -3
+Failed to open device (Reason = LIBUSB_ERROR_ACCESS).
+
+i = 3, rc = -3
+Failed to open device (Reason = LIBUSB_ERROR_ACCESS).
+error: CORTEX_M4_0: Error connecting to the target: Frequency is out of range.
+Failed: Operation was aborted
+the selected serial port Failed: Operation was aborted
+ does not exist or your board is not connected
+
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.
+
+
+
+
+Energia: 1.6.10E18 (Linux), Board: "LaunchPad (Tiva C) w/ tm4c123 (80MHz)"
+
+/home/pavan/.energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-exit.o): In function `exit':
+exit.c:(.text.exit+0x1a): undefined reference to `_exit'
+collect2: error: ld returned 1 exit status
+exit status 1
+Error compiling for board LaunchPad (Tiva C) w/ tm4c123 (80MHz).
+
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+Network_layers:
+
+osi:
+----
+1. Application 
+2. Presentation
+3. Session
+4. Transport
+5. Network
+6. Data-link
+7. Physical
+
+tcp:
+
+1. Application
+2. Transport
+3. Internet
+4. Network Interface
+
+
+
+
+
