@@ -4,7 +4,7 @@
 char ssid[]="Lenovo";
 char pass[]="123456789";
 
-IPAddress ip(192,168,43,123);
+IPAddress ip(192,168,43,12);
 
 char data[15];
 
@@ -48,16 +48,16 @@ void setup() {
 
 void loop() {
 
-  int packetsize = Udp.parsePacket()
+  int packetsize = Udp.parsePacket();
   
   
   if (Serial.available()){
-    Serial.readBytes(Data, 15);
+    Serial.readBytes(data, 15);
     Udp.beginPacket(ip, 2500);
-    Udp.write()
-    Udp.endPacket()
+    Udp.write(data);
+    Udp.endPacket();
 
-    for (i = 0; i < 10; i++){
+    for (int i = 0; i < 10; i++){
       data[i] =' ';
     }
     
