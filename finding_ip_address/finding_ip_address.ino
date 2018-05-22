@@ -4,20 +4,20 @@
 // user name and password of wifi hotspot
 
 char ssid[]="Ftp";
-char pass[]="pavan12345678";
+char pass[]="pavan123456789";
 
 IPAddress ip,gateway,subnetmask;
 
 void setup()
 {
-  // put your setup code here, to run once:
+  
   Serial.begin(9600);
   
   // Connect to wifi
   WiFi.begin(ssid,pass);
   
   while(WiFi.status()!=WL_CONNECTED){
-    Serial.print("Retry");
+    Serial.print("Retry ");
     Serial.println(ssid);
     delay(1000);
   }
